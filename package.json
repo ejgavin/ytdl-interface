@@ -1,14 +1,25 @@
 {
-  "name": "ytdownloader",
+  "name": "ytdl-interface",
   "version": "1.0.0",
-  "description": "",
-  "main": "ytdl.js",
+  "description": "A simple minimalistic user interface to download YouTube video and audio.",
+  "main": "server.js",
   "scripts": {
-    "dev": "node ytdl",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "node server",
+    "install-deps": "npm install",
+    "open": "open http://localhost:5000",
+    "setup": "npm run install-deps && npm run start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "youtube",
+    "downloader",
+    "video",
+    "audio",
+    "ytdl-core",
+    "express",
+    "nodejs"
+  ],
+  "author": "towtin",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
